@@ -1,0 +1,144 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --title: #fffcf9;
+    --subtitle: #b3b3b3;
+    --bg-button: #e9e6e3;
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+@media (max-width: 500px) {
+    main.api-response {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     main.api-response h2, 
+     main.api-response p {
+        text-align: center;
+     }
+
+     main.api-response div {
+        padding: 0 3rem 0 3rem;
+    }
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 0 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    background: var(--background);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: center;
+    color: #FFFCF9;
+}
+
+h2 {
+    margin-bottom: 1.9rem;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: left;
+    color: #FFFCF9;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: left;
+    color: #FFFCF9;
+}
+
+header {
+    text-align: center;
+}
+
+/* API container */
+
+main {
+    display: none;
+    max-width: 62.8rem;
+    margin: 3rem auto;
+
+}
+
+main.api-response {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   gap: 3.4rem;
+}
+
+main.api-response img {
+    width: 17.1rem;
+    height: 24.377rem;
+}
+
+.hide {
+    display: none;
+}
+
+.response-404 {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* end */ 
+
+button {
+    width: 18.098rem;
+    height: 4.7rem;
+    margin: 3rem auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem; 
+
+    background: #E9E6E3;
+    border: 0.2rem solid #1A1A1A;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(0.1rem);
+}
+
+span {
+    display: block;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #FFFCF9;
+}
+
+
+
+
+
+
